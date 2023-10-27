@@ -1,0 +1,23 @@
+# JIRA Config，注意yaml的空格
+
+# Atlassian Jira 服务器地址
+jira_server_url:
+username:
+# 密码注意用引号括起来，因为有特殊符号
+password:
+
+# 要查询的项目，可以填写多个
+list_project:
+  - name:                       # 自定义项目名
+    key:                        # 项目名，需要和jira上的名称一致
+    project_manager:            # 保留，可不填
+    manager_phone:              # 电话号码用于在钉钉@对应项目的负责人
+
+# 查询的范围，查询近30天已经resolve的jira issue
+# 默认查询已经resolve的jira issue
+time_range: 30
+
+# 钉钉群机器人URL，在钉钉群里创建自定义机器人可获得此url
+robot_url:
+# 该标签是在添加钉钉自定义机器人时的自定义标签，必须填写一致，否则消息无法发送成功
+robot_tag:
